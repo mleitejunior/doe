@@ -1,9 +1,10 @@
-# Doe - 3rd MaratonaDev by Rocketseat
+![DOE website logo](https://github.com/mleitejunior/doe/blob/master/public/logo.png)
+# Doe
 
-Express Node.js / Html / Css / PostgreSQL
 Server and Website build at MaratonaDev free course (17/feb to 19/feb 2020)
+Express Node.js / Html / Css / PostgreSQL
 
-## Getting Started
+## Install and run
 
 To copy this project to your machine, you need to:
 
