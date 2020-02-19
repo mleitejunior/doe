@@ -2,7 +2,7 @@
   <img src="https://github.com/mleitejunior/doe/blob/master/public/logo.png" title="DOE logo" alt="DOE LOGO">
 </p>
 
-<p align="center">Server and Website build at MaratonaDev free course (17/feb to 19/feb 2020)
+<p align="center">Server and Website build at MaratonaDev free course (17/feb to 19/feb 2020)<br>
 Express Node.js / Html / Css / PostgreSQL</p>
 
 ## Install and run
