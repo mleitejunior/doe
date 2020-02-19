@@ -2,8 +2,8 @@
   <img src="https://github.com/mleitejunior/doe/blob/master/public/logo.png" title="DOE logo" alt="DOE LOGO">
 </p>
 
-Server and Website build at MaratonaDev free course (17/feb to 19/feb 2020)
-Express Node.js / Html / Css / PostgreSQL
+<p align="center">Server and Website build at MaratonaDev free course (17/feb to 19/feb 2020)
+Express Node.js / Html / Css / PostgreSQL</p>
 
 ## Install and run
 
@@ -21,7 +21,7 @@ Git clone https://github.com/mleitejunior/doe
 ```
 npm install
 ```
-or
+  or
 ```
 yarn install
 ```
@@ -53,6 +53,6 @@ database: doe
 
 ## Authors
 
-* **Marcelo Leite Junior** - *Student, code owner* - [Github mleitejunior](https://github.com/mleitejunior)
-* **Mayk Brito** - *Instructor* - [Github Maykbrito](https://github.com/maykbrito)
-* **Rocketseat** - *Education and Tecnology Platform* - [Github Rocketseat](https://github.com/Rocketseat)
+* **Marcelo Leite Junior** - *Student, code owner* - [mleitejunior's Github](https://github.com/mleitejunior)
+* **Mayk Brito** - *Instructor* - [Maykbrito's Github](https://github.com/maykbrito)
+* **Rocketseat** - *Education and Tecnology Platform* - [Rocketseat's Github](https://github.com/Rocketseat)
