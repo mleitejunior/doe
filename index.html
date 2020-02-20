@@ -1,7 +1,7 @@
 <html>
     <head>
         <!-- são configurações da minha página -->
-        <title>Doe sangue! Doe Vida!</title>
+        <title>DOE - Give blood! Save life!</title>
 
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -9,52 +9,67 @@
     <body>
         <header>
             <img class="logo" src="logo.png" alt="Imagem de DOE">
-            <h2>A sua doação importa</h2>
-            <p>Até 3 vidas com 1 doação</p>
-            <p>Mais de 38.000 doações são necessárias todos os dias</p>
-            <p>Apenas 1,9% da população brasileira doa sangue</p>
-            <button>Quero ajudar</button>
+            <h2>Your donation matters</h2>
+            <p>Up to 3 lifes with 1 donation</p>
+            <p>More then 38.000 blood donations are needed every day</p>
+            <p>Only 16% of the world's population donates</p>
+            <button>I WANT TO HELP</button>
         </header>
 
         <section class="form hide">
-            <h2>Entre na lista de doadores</h2>
+            <h2>Join the donors list</h2>
             <form action="/" method="POST">
                 <input 
                     type="text" 
                     name="name"
-                    placeholder="Nome Completo"
+                    placeholder="Full Name"
+                    required="true"
                     >
                 <input 
                     type="text" 
                     name="email"
                     placeholder="E-mail"
+                    required="true"
                     >
-                <input 
-                    type="text" 
+                <select 
                     name="blood"
-                    placeholder="Tipo Sanguíneo"
-                    >
-                <button>ENVIAR</button>
+                    required="true">
+                    <option value="">Blood Type</option>
+                    <option value="+AB">+AB</option>
+                    <option value="-AB">-AB</option>
+                    <option value="+A">+A</option>
+                    <option value="-A">-A</option>
+                    <option value="+B">+B</option>
+                    <option value="-B">-B</option>
+                    <option value="+O">+O</option>
+                    <option value="-O">-O</option>
+                </select>
+                <button>SEND</button>
             </form>
         </section>
 
         <main>
-            <h2>Últimos <span>doadores</span></h2>
+            <h2>Last <span>donors</span></h2>
 
             <section class="donors">
+                {% set isFirst = 1 %}
                 {% for donor in donors %}
-                    <div class="donor">
-                        <div class="blood">{{donor.blood}}</div>
-                        <p>{{donor.name}}</p>
-                    </div>
+                    {% if isFirst == 1 %}
+                        <div class="donor">
+                            <div class="blood">{{donor.blood}}</div>
+                            <p>{{donor.name}}<br><span style="color: red; font-size: 12px; font-weight: bold;">NEW DONOR!<br>THANK YOU!</span></p>
+                        </div>
+                        {% else %}
+                        <div class="donor">
+                            <div class="blood">{{donor.blood}}</div>
+                            <p>{{donor.name}}</p>
+                        </div>
+                    {% endif %}
+                    {% set isFirst = 0 %}
                 {% endfor %}
             </section>
         </main>
-
-
-
-        <footer> Com ❤, Rocketseat</footer>
-
+        <footer>❤ Thank You Rocketseat</footer>
         <script src="scripts.js"></script>
     </body>
 </html>
